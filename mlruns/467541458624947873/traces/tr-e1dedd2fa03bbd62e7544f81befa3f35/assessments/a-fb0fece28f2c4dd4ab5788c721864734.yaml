@@ -1,0 +1,22 @@
+assessment_id: a-fb0fece28f2c4dd4ab5788c721864734
+assessment_name: relevance_to_query
+create_time: '2026-03-09T03:04:35.888Z'
+feedback:
+  value: 'yes'
+last_update_time: '2026-03-09T03:04:35.888Z'
+metadata:
+  mlflow.assessment.judgeCost: '0.003075'
+  mlflow.assessment.judgeInputTokens: '480'
+  mlflow.assessment.judgeOutputTokens: '109'
+  mlflow.assessment.sourceRunId: 9f3e3507acac42e8ae66795a4aa22cee
+rationale: 'The question asks for two pieces of information: (1) the current time,
+  and (2) the sum of the hour and minutes from that time. The answer provides the
+  current time as 03:04:23 UTC and then calculates the sum of the hour (3) and minutes
+  (4) as 7. Both pieces of requested information are directly addressed in the answer,
+  making it relevant to the question.'
+source:
+  source_id: anthropic:/claude-sonnet-4-5-20250929
+  source_type: LLM_JUDGE
+span_id: ffa86c650a7774be
+trace_id: tr-e1dedd2fa03bbd62e7544f81befa3f35
+valid: true

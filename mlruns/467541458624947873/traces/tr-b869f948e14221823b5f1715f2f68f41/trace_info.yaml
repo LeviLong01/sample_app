@@ -1,0 +1,12 @@
+execution_duration_ms: 5637
+request_preview: '[{"role": "user", "content": [{"text": "What is the current time
+  and what is the sum of it''s hour and minutes?"}]}]'
+request_time: '2026-03-09T03:04:21.649Z'
+response_preview: '"The current time is **03:04:23 UTC** (March 9, 2026).\n\nThe sum
+  of the hour (3) and minutes (4) is **7**.\n"'
+state: OK
+trace_id: tr-b869f948e14221823b5f1715f2f68f41
+trace_location:
+  mlflow_experiment:
+    experiment_id: '467541458624947873'
+  type: MLFLOW_EXPERIMENT

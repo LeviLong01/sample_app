@@ -1,0 +1,42 @@
+assessment_id: a-a3468407c27649b9bc47c2a0a04cde55
+assessment_name: tool_call_correctness
+create_time: '2026-03-09T03:02:44.794Z'
+feedback:
+  error:
+    error_code: SCORER_ERROR
+    error_message: "2 validation errors for FunctionCall\narguments.str\n  Input should
+      be a valid string [type=string_type, input_value=[{'role': 'tool', 'content':
+      {}}], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_type\narguments.dict[str,any]\n
+      \ Input should be a valid dictionary [type=dict_type, input_value=[{'role':
+      'tool', 'content': {}}], input_type=list]\n    For further information visit
+      https://errors.pydantic.dev/2.12/v/dict_type"
+    stack_trace: "Traceback (most recent call last):\n  File \"/Users/levilong/Documents/sample_app/.venv/lib/python3.14/site-packages/mlflow/genai/evaluation/harness.py\",
+      line 336, in run_scorer\n    value = scorer_func(\n        inputs=eval_item.inputs,\n
+      \   ...<2 lines>...\n        trace=eval_item.trace,\n    )\n  File \"/Users/levilong/Documents/sample_app/.venv/lib/python3.14/site-packages/mlflow/genai/scorers/base.py\",
+      line 498, in run\n    result = self(**filtered)\n  File \"/Users/levilong/Documents/sample_app/.venv/lib/python3.14/site-packages/mlflow/genai/scorers/base.py\",
+      line 169, in wrapper\n    return telemetry_wrapped(*args, **kwargs)\n  File
+      \"/Users/levilong/Documents/sample_app/.venv/lib/python3.14/site-packages/mlflow/telemetry/track.py\",
+      line 30, in wrapper\n    result = func(*args, **kwargs)\n  File \"/Users/levilong/Documents/sample_app/.venv/lib/python3.14/site-packages/mlflow/genai/scorers/builtin_scorers.py\",
+      line 1084, in __call__\n    actual_calls = extract_tools_called_from_trace(trace)\n
+      \ File \"/Users/levilong/Documents/sample_app/.venv/lib/python3.14/site-packages/mlflow/genai/utils/trace_utils.py\",
+      line 229, in extract_tools_called_from_trace\n    tool_info = FunctionCall(\n
+      \       name=_extract_tool_name_from_span(tool_span),\n    ...<2 lines>...\n
+      \       exception=_get_exception_from_span(tool_span),\n    )\n  File \"/Users/levilong/Documents/sample_app/.venv/lib/python3.14/site-packages/pydantic/main.py\",
+      line 250, in __init__\n    validated_self = self.__pydantic_validator__.validate_python(data,
+      self_instance=self)\npydantic_core._pydantic_core.ValidationError: 2 validation
+      errors for FunctionCall\narguments.str\n  Input should be a valid string [type=string_type,
+      input_value=[{'role': 'tool', 'content': {}}], input_type=list]\n    For further
+      information visit https://errors.pydantic.dev/2.12/v/string_type\narguments.dict[str,any]\n
+      \ Input should be a valid dictionary [type=dict_type, input_value=[{'role':
+      'tool', 'content': {}}], input_type=list]\n    For further information visit
+      https://errors.pydantic.dev/2.12/v/dict_type\n"
+  value: null
+last_update_time: '2026-03-09T03:02:44.794Z'
+metadata:
+  mlflow.assessment.sourceRunId: ff69a2e86561480f8796efa102a4a4cf
+source:
+  source_id: tool_call_correctness
+  source_type: CODE
+span_id: 41820dedcb353413
+trace_id: tr-a0c4657cdc838f001241522b3bab0237
+valid: true

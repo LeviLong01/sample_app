@@ -1,0 +1,14 @@
+artifact_uri: /Users/levilong/Documents/sample_app/mlruns/467541458624947873/265e7dc91f9e4189bc38a0e8ced8557a/artifacts
+end_time: 1773026045757
+entry_point_name: ''
+experiment_id: '467541458624947873'
+lifecycle_stage: active
+run_id: 265e7dc91f9e4189bc38a0e8ced8557a
+run_name: strands_multi_eval_run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773026029953
+status: 3
+tags: []
+user_id: levilong

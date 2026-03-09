@@ -1,0 +1,16 @@
+assessment_id: a-a99bc95eff0c4a09b3348dddf81d8699
+assessment_name: expected_tool_calls
+create_time: '2026-03-09T03:14:05.706Z'
+expectation:
+  serialized_value:
+    serialization_format: JSON_FORMAT
+    value: '[{"name": "calculator"}, {"name": "current_time"}]'
+last_update_time: '2026-03-09T03:14:05.706Z'
+metadata:
+  mlflow.assessment.sourceRunId: 265e7dc91f9e4189bc38a0e8ced8557a
+source:
+  source_id: levilong
+  source_type: HUMAN
+span_id: 602bcad21ccf28b1
+trace_id: tr-c031f60506f6ce12bdc31153ff55a75a
+valid: true
